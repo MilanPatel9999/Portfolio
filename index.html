@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milan Patel — Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="logo" href="#">Milan<span>Patel</span></a>
+            <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" class="btn small">Toggle Theme</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-inner">
+                <h1>Hi, I'm <span class="accent">Milan Patel</span></h1>
+                <p class="lead">I build modern, responsive websites and web apps — focusing on accessible, performant user experiences.</p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn ghost">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container about">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a frontend developer with a passion for crafting clean interfaces and smooth interactions. I enjoy solving UI problems and turning ideas into polished products.</p>
+                </div>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>HTML & CSS (Responsive, Flexbox, Grid)</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Accessible, performant UI</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <article class="card">
+                    <div class="card-body">
+                        <h3>Project One</h3>
+                        <p>Responsive landing page with animations and accessible components.</p>
+                        <a class="btn small" href="#">See project</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-body">
+                        <h3>Project Two</h3>
+                        <p>Single-page app demonstrating state management and API integration.</p>
+                        <a class="btn small" href="#">See project</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-body">
+                        <h3>Project Three</h3>
+                        <p>Design-to-code implementation with pixel-perfect layout and tests.</p>
+                        <a class="btn small" href="#">See project</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="container contact">
+            <h2>Contact</h2>
+            <form class="contact-form" action="mailto:youremail@example.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="message" rows="6" placeholder="Message" required></textarea>
+                <button class="btn primary" type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">© <span id="year"></span> Milan Patel — Built with care.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
